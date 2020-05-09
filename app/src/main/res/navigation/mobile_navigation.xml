@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/contests_nav_item">
+
+    <fragment
+        android:id="@+id/contests_nav_item"
+        android:name="in.ac.siesgst.arena.fragment.ContestsFragment"
+        android:label="CONTESTS"
+        tools:layout="@layout/fragment_contests" />
+
+    <fragment
+        android:id="@+id/problem_set_nav_item"
+        android:name="in.ac.siesgst.arena.fragment.ProblemSetFragment"
+        android:label="PROBLEM SET"
+        tools:layout="@layout/fragment_problem_set" />
+
+    <fragment
+        android:id="@+id/profile_nav_item"
+        android:name="in.ac.siesgst.arena.fragment.ProfileFragment"
+        android:label="PROFILE"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

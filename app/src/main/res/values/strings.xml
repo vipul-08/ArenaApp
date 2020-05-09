@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SIESGST Arena</string>
+    <string name="skip_intro">SKIP INTRO</string>
+    <string name="next">NEXT</string>
+    <string name="tilda">~</string>
+    <string name="enter_you_username">Enter you Username</string>
+    <string name="welcome_to_siesgst_arena">Welcome to SIESGST Arena</string>
+    <string name="profile">Profile</string>
+    <string name="problem_set">Problem Set</string>
+    <string name="contests">Contests</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
