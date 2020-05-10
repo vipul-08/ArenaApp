@@ -1,8 +1,7 @@
 package `in`.ac.siesgst.arena.adapter
 
 import `in`.ac.siesgst.arena.R
-import `in`.ac.siesgst.arena.util.IntroSlide
-import android.opengl.Visibility
+import `in`.ac.siesgst.arena.model.IntroSlide
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.GONE

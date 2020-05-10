@@ -33,6 +33,7 @@
         android:layout_marginBottom="10dp" />
 
     <ProgressBar
+        android:id="@+id/enterUsernameProgress"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_marginEnd="10dp"

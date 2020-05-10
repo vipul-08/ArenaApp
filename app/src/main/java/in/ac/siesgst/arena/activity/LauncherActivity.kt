@@ -2,8 +2,10 @@ package `in`.ac.siesgst.arena.activity
 
 import `in`.ac.siesgst.arena.R
 import `in`.ac.siesgst.arena.adapter.IntroSlideAdapter
-import `in`.ac.siesgst.arena.util.IntroSlide
+import `in`.ac.siesgst.arena.model.IntroSlide
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
@@ -15,6 +17,18 @@ import androidx.viewpager2.widget.ViewPager2
 import kotlinx.android.synthetic.main.activity_launcher.*
 
 class LauncherActivity : AppCompatActivity() {
+
+    private lateinit var sharedPreferences: SharedPreferences
+    override fun onStart() {
+        super.onStart()
+        sharedPreferences = this.getSharedPreferences("userInfo", Context.MODE_PRIVATE)
+        if (sharedPreferences.getString("username", "null") != "null") {
+            Intent(applicationContext, BottomNavigationActivity::class.java).also {
+                startActivity(it)
+                finish()
+            }
+        }
+    }
 
     private val introSliderAdapter = IntroSlideAdapter(
         listOf(

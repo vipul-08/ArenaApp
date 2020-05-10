@@ -1,4 +1,4 @@
-package `in`.ac.siesgst.arena.util
+package `in`.ac.siesgst.arena.model
 
 data class IntroSlide (
     val title: String,
